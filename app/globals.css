@@ -20,7 +20,50 @@
 }
 
 body {
-  background: var(--background);
+  margin: 0;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* Contenedor de toda la home */
+.page {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  background-image: url("/assets/home-bg.png");
+  background-repeat: no-repeat;
+
+  background-size: 140% auto;
+
+  background-position: center 0px;
+}
+
+.section {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 70px 16px;
+}
+
+.sectionTint {
+  border-radius: 28px;
+  padding: 50px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.glassCard {
+  border-radius: 28px;
+  background: rgba(210, 226, 245, 0.75);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  padding: 44px;
 }
