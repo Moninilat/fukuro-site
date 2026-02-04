@@ -5,18 +5,10 @@
   place-items: center;
   overflow: hidden;
   padding: 40px 16px;
-  background: #7aa0c8;
+  background: transparent;
 }
 
-.bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
 
-.bgImg {
-  object-fit: cover;
-}
 
 .card {
   position: relative;
@@ -38,6 +30,16 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.right {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+
+  display: grid;
+  place-items: center;
+}
+
 
 .brandRow {
   display: flex;
@@ -125,7 +127,7 @@
 
 .heroImg {
   object-fit: contain;
-  padding: 14px;
+  transform: scale(1.15);
 }
 
 @media (max-width: 900px) {

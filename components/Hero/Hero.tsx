@@ -4,17 +4,7 @@ import styles from "./Hero.module.css";
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      {/* Fondo */}
-      <div className={styles.bg}>
-        <Image
-          src="/assets/home-bg.png"
-          alt=""
-          fill
-          priority
-          className={styles.bgImg}
-        />
-      </div>
-
+     
       {/* Tarjeta */}
       <div className={styles.card}>
         {/* Izquierda */}
@@ -49,7 +39,7 @@ export default function Hero() {
         {/* Derecha */}
         <div className={styles.right}>
           <Image
-            src="/assets/hero-owl-multitask.png"
+            src="/assets/Fukuro_Hero.png"
             alt="Fukuro multitarea"
             fill
             priority

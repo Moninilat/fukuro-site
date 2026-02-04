@@ -1,69 +1,25 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  margin: 0;
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 html, body {
   height: 100%;
 }
 
 body {
   margin: 0;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #7aa0c8;
+  background-image: url("/assets/home-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center 0px;
+  background-attachment: scroll;
 }
 
-/* Contenedor de toda la home */
 .page {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
 
-  background-image: url("/assets/home-bg.png");
-  background-repeat: no-repeat;
-
-  background-size: 140% auto;
-
-  background-position: center 0px;
-}
-
-.section {
-  width: min(1180px, 100%);
-  margin: 0 auto;
-  padding: 70px 16px;
-}
-
-.sectionTint {
-  border-radius: 28px;
-  padding: 50px;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-}
-
-.glassCard {
-  border-radius: 28px;
-  background: rgba(210, 226, 245, 0.75);
-  backdrop-filter: blur(6px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-  padding: 44px;
+  /* IMPORTANTE: aquí NO va fondo */
+  background: transparent;
 }

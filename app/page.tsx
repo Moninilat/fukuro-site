@@ -9,25 +9,11 @@ export default function Home() {
 
       <section className="section">
         <div className="glassCard">
-          <h2>Somos expertos en simplificar tu gestión</h2>
-          <p>
-            Mientras tú construyes, vendes, atiendes y haces que tu proyecto crezca,
-            nosotros nos encargamos del terreno invisible: contabilidad clara, gestión precisa y decisiones.
+          <h2>Sección 2</h2>
+          <p style={{ marginTop: 16 }}>
+            Texto de relleno para que haya altura y se note el scroll del fondo.
           </p>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="glassCard">
-          <h2>Otra sección</h2>
-          <p>Contenido...</p>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="glassCard">
-          <h2>Otra sección</h2>
-          <p>Contenido...</p>
+          <div style={{ height: 700 }} />
         </div>
       </section>
     </main>
